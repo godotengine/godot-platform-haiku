@@ -50,7 +50,7 @@ def configure(env):
             env.Prepend(CCFLAGS=["-g2"])
 
     elif env["target"] == "debug":
-        env.Prepend(CCFLAGS=["-g3", "-DDEBUG_ENABLED", "-DDEBUG_MEMORY_ENABLED"])
+        env.Prepend(CCFLAGS=["-g3", "-DDEBUG_ENABLED"])
 
     ## Architecture
 
